@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="" href="/vite.svg" /> -->
+    <link rel="icon" type="" href="./public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <title>Fit Core</title>
+
+    <style>
+      .before--none::before{
+        display: none !important;
+        border-radius: 0px !important;
+      }
+      .custom-icon-hover:hover i{
+        color: #f1f1f1;
+      }
+      .custom-paragraph-hover:hover p{
+        color: #f1f1f1;
+      }
+      .custom-paragraph-hover:hover h1{
+        color: #f1f1f1;
+      }
+      .slick-prev, .slick-next{
+        top: unset !important;
+        bottom: 0 !important;
+        left: unset !important;
+        right: 20px !important;
+        width: 40px !important;
+        height: 40px !important;
+        z-index: 1 !important;
+      }
+      .slick-prev{
+        right: 80px !important;
+      }
+      .slick-prev:before, .slick-next:before{
+        font-size: 40px !important;
+        color: #A1F65E !important;
+      }
+      .active_button{
+        background: red !important;
+      }
+      @media  screen and (max-width:768px) {
+        .banner{
+          background: linear-gradient(#1d232ab3,#1d232aa1) ,url(../../../../public/Images/banner_img.jpg) !important;
+          position: relative;
+          background-position: center right !important;
+        }
+      }
+
+
+      :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(summary):not(.active).focus, :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(summary):not(.active):focus, :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):is(summary):not(.active):focus-visible, :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):not(summary):not(.active).focus, :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):not(summary):not(.active):focus, :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):is(summary):not(.active):focus-visible{
+        color: #a1f65e !important;
+      }
+
+        
+    </style>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      
+      function handleActivefun(target){
+        document.querySelector('.defalut__btn').classList.remove('active');
+        alert(target);
+      }
+      
+  </script>
+  </body>
+</html>
